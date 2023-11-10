@@ -1,0 +1,207 @@
+body {
+    display: flex;
+    flex-direction: row !important;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+}
+
+aside {
+
+    background-color: #292944;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+
+
+}
+
+img {
+    margin-bottom: 2.5rem;
+}
+
+.main {
+
+    width: 80%;
+    background-color: beige;
+}
+
+.main,
+aside {
+    margin: 0.25rem;
+    height: 95%;
+    border-radius: 12px;
+    padding: 1rem;
+    position: sticky;
+}
+
+.actions {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+button {
+    width: 80%;
+    background-color: beige;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 12px; 
+    color: #292944;
+    border: 1px solid #292944;
+}
+
+
+    a{
+        color: #292944;
+    }
+
+/* MAIN */
+main {
+    overflow: scroll;
+
+
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #292944;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+}
+
+.dashboard-item, .dashboard-item-total {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 10rem;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-color: aliceblue;
+    margin: 1rem;
+
+    border-radius: 12px;
+    
+}
+
+.dashboard-item-total{width: 60%; height: 12rem;} 
+
+
+.total-consultation , .total-souscription{
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: space-around;
+
+    width: 100%;
+    height: 50% ;
+    margin: 0.1rem;
+ }
+
+ 
+p {
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+
+
+
+/* Stylisation pour les petits et moyens écrans */
+@media (max-width: 992px) {
+    body {
+        margin-top: 1rem;
+        flex-direction: column; 
+        padding-top: 2rem;
+    }
+
+    .logo , .date {
+        display: none;
+    }
+
+    aside {
+        justify-content: space-between;
+padding-top: 1rem;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 95%; 
+         }
+
+    .actions {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap; /* Si les boutons débordent, ils passeront à la ligne */
+        align-items: center;
+        justify-content: center; /* Centrage des éléments si nécessaire */
+    }
+
+    button {
+        width: 30%;
+        margin: 0.25rem; /* Espacement entre les boutons */
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    
+
+    .nav {
+        flex-direction: row; /* Passage à une disposition en colonne pour la barre de navigation */
+        height: auto; /* Hauteur adaptative */
+        margin-bottom: 0.5rem; /* Marge inférieure réduite */
+    }
+
+    .dashboard {
+        flex-direction: column; /* Passage à une disposition en colonne pour le tableau de bord */
+        align-items: center; /* Centrage des éléments */
+    }
+
+    .dashboard-item, .dashboard-item-total {
+        width: 70%; /* Éléments prennent la largeur totale */
+        height: 6rem; /* Hauteur adaptative */
+        margin: 0.5rem 0; /* Espacement entre les éléments */
+    }
+
+    .dashboard-item-total {
+        height: auto; /* Hauteur adaptative */
+    }
+
+    .total-consultation,
+    .total-souscription {
+        width: 100%; /* Éléments prennent la largeur totale */
+        height: auto; /* Hauteur adaptative */
+        margin: 0.5rem 0; /* Espacement entre les éléments */
+    }
+
+    p {
+        font-weight: 400; /* Poids de la police réduit */
+    }
+
+    h1 {
+        font-size: 2rem; /* Taille des titres réduite */
+    }
+}
