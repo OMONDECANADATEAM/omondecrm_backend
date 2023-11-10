@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="{{'assets/css/style.css'}}">
     <link rel="stylesheet" href="{{'assets/css/contacts.css'}}">
-    
+    <link rel="stylesheet" href="{{'assets/css/banque.css'}}">
+
+  
     <title>HOME | OMONDE</title>
 </head>
 
@@ -21,8 +24,8 @@
                 </p>
                </a>
             </button>
-            <button class="action active">
-               <a href="">
+            <button class="action ">
+               <a href="contacts.html">
                 <p class="text-action">
                     Contacts
                 </p>
@@ -35,8 +38,8 @@
                 </p>
                </a>
             </button>
-            <button class="action">
-               <a href="">
+            <button class="action active">
+               <a href="banque.html">
                 <p class="text-action">
                     Banque
                 </p>
@@ -61,14 +64,14 @@
     <div class="main">
         <div class="nav">
             <h1>
-                Contacts
+                Liste des paiements
             </h1>
             <p class="date">
-                8 novembre 2023
+                9 novembre 2023
             </p>
             <div>
                 <p class="nom">
-                    Konan Pierre Japhet
+                    Salomon Banzouzi
                 </p>
                 <p class="poste">IT Support</p>
             </div>
@@ -82,91 +85,32 @@
                 +
             </button>
 
+            <button class="btn-ajout-contact">
+                
+            </button>
+
            </div>
 
-           <div class="seconde-ligne" >
-
-            <div class="contact" id="head-table">
-
-                <div class="id-contact" id="id-contact">
-                    ID
-                </div>
-
-                <div class="nom-prenom-contact" id="nom-prenom-contact-head">
-                NOM & PRENOMS
-                </div>
-               
-                <div class="telephone" id="telephone-head">TELEPHONE</div>
-
-                <div class="proffession" id="proffession-head">PROFESSION</div>
-
-                <div class="date-enregistrement" id="date-head">
-                    DATE
-                </div>
-
-            </div>
-
+           <div class="seconde-ligne">
                 <div class="contact">
 
                     <div class="id-contact">
-                        #222
+                        222
                     </div>
 
                     <div class="nom-prenom-contact">
-                    test test test 
+                    Annick Kekolo
                     </div>
-                    
-                    <div class="telephone">test@\test.test</div>
+                    <div class="mail">50000</div>
+                    <div class="telephone">CONSULTATION</div>
 
-                    <div class="proffession">proffession</div>
+                    <!--div class="proffession"></div-->
 
                     <div class="date-enregistrement">
-                        8-8-2023
+                        9-11-2023
                     </div>
 
                 </div>
-
-                <div class="contact">
-
-                    <div class="id-contact">
-                        #222
-                    </div>
-
-                    <div class="nom-prenom-contact">
-                    test test test 
-                    </div>
-                  
-                    <div class="telephone">test@\test.test</div>
-
-                    <div class="proffession">proffession</div>
-
-                    <div class="date-enregistrement">
-                        8-8-2023
-                    </div>
-
-                </div>
-
-                <div class="contact">
-
-                    <div class="id-contact">
-                        #222
-                    </div>
-
-                    <div class="nom-prenom-contact">
-                    test test test 
-                    </div>
-                   
-                    <div class="telephone">test@\test.test</div>
-
-                    <div class="proffession">proffession</div>
-
-                    <div class="date-enregistrement">
-                        8-8-2023
-                    </div>
-
-                </div>
-
-                
            </div>
         </div>
         <div class="tableau">

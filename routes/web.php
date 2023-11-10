@@ -26,4 +26,8 @@ Route::get('/contact-clients', function () {
     return view('contacts');
 });
 
+Route::get('/banque', function () {
+    return view('banque');
+});
+
 
