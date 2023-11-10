@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+    ;
+    height: 100vh; /* Utilisation de la hauteur de l'écran */
+    width: 100%;
+    padding: 1rem;
+}
+a{
+    text-decoration: none; color: #BE1010;
+}
+
+
+.logo img {
+    max-width: 20rem;
+}
+
+
+main {
+    width: 80vh; /* Ajustement de la largeur pour une meilleure adaptation */
+    height: 60vh; /* Utilisation de la hauteur de l'écran */
+    background-color: #BE1010;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+main > p {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #FFF;
+    margin: 2rem 0; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+}
+
+input {
+    width: 85%;
+    height: 20%;
+    border-radius: 12px;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    background-size: 1.5rem;
+    background-position: 8px 50%;
+    background-repeat: no-repeat;
+}
+
+.input1 {
+    background-image: url('assets/icons/icon-person.jpg');
+}
+
+.input2 {
+    background-image: url('assets/icons/icon-password.png');
+}
+
+input::placeholder {
+    color: black;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.input-connexion {
+    border: 1px solid black;
+}
+
+.btn-connexion {
+    border-radius: 12px;
+    background: #FFF;
+    height: 15%;
+    width: 40%;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #BE1010;
+    border: 1px solid #fff ;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #292944;
+    color: #fff;
+}
+
+/* Vos styles précédents restent les mêmes */
+
+/* Masquer le logo sur les petits écrans */
+@media (max-width: 768px) {
+    .logo {
+        display: none; /* Cache le logo pour les écrans de taille inférieure ou égale à 768px de largeur */
+    }
+
+    main {
+        width: 90%; /* Ajustement de la largeur pour une meilleure adaptation sur les petits écrans */
+    }
+
+    main > p {
+        font-size: 1.5rem; /* Ajustement de la taille de la police pour les petits écrans */
+        margin-top: 1.5rem; /* Ajustement de la marge pour le texte */
+    }
+
+    input {
+        font-size: 0.9rem; /* Ajustement de la taille de la police pour les champs de saisie sur les petits écrans */
+    }
+
+    .btn-connexion {
+        font-size: 0.9rem; /* Ajustement de la taille de la police pour le bouton de connexion sur les petits écrans */
+    }
+}
